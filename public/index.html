@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#003d20">
+  <meta name="description" content="C&M Neighborhood Services: reliable, affordable, local lawn care, car washing, yard work and neighborhood cleanup. Request a service online.">
+  <title>C&M Neighborhood Services | Book Multiple Services</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-inner wrap">
+      <a class="wordmark" href="#home" aria-label="C&M Neighborhood Services, home">
+        <svg class="brand-icon" width="96" height="70" viewBox="0 0 120 85" fill="none" aria-hidden="true"><path d="M5 42 60 5l55 37" stroke="#5df6d9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 40v29h78V40" stroke="#fff" stroke-width="6"/><path d="M54 38h15v18H54z" fill="#fff"/><path d="M30 60c-7-6-13-10-18-10 5 7 8 14 8 19M18 70C9 63 3 62 1 64l6 10" fill="#a4ed16"/><path d="M84 26h15V9H84" fill="#18cd56"/></svg>
+        <span class="wordmark-text"><strong>C<span class="amp">&amp;</span>M</strong><small>NEIGHBORHOOD SERVICES</small></span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <nav id="nav-links" class="nav-links" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <a href="#request" class="nav-cta"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 13h2M14 13h2"/></svg> Request a Service</a>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-dot"></span> YOUR LOCAL NEIGHBORHOOD TEAM</p>
+          <h1>C&amp;M<br>Neighborhood Services</h1>
+          <p class="tagline">Reliable <span>•</span> Affordable <span>•</span> Local</p>
+          <p class="intro">Lawn care, cleaning, and more — keeping your neighborhood looking its best.</p>
+          <div class="hero-actions"><a href="#request" class="button button-primary">Request a Service <span aria-hidden="true">↗</span></a><a href="#services" class="button button-outline">View Services</a></div>
+        </div>
+        <div class="request-card" id="request">
+          <h2>Request a Job</h2>
+          <p>Tell us what you need and we'll get back to you with a price and available date!</p>
+          <form id="request-form" novalidate>
+            <label class="sr-only" for="fullName">Full Name</label><input id="fullName" name="fullName" placeholder="Full Name *" autocomplete="name" required minlength="2" maxlength="100">
+            <label class="sr-only" for="email">Email</label><input id="email" name="email" type="email" placeholder="Email *" autocomplete="email" required maxlength="200">
+            <label class="sr-only" for="phone">Phone Number</label><input id="phone" name="phone" type="tel" placeholder="Phone Number *" autocomplete="tel" required maxlength="40">
+            <fieldset class="service-picker-visible" id="service-picker">
+              <legend><span class="multi-label">Choose ALL services you need <span class="new-pill">MULTIPLE OK</span></span></legend>
+              <div class="service-options-visible" id="service-options" aria-label="Choose one or more services">
+                <label><input type="checkbox" name="services" value="Lawn Mowing"><span>Lawn Mowing</span></label>
+                <label><input type="checkbox" name="services" value="Leaf Cleanup"><span>Leaf Cleanup</span></label>
+                <label><input type="checkbox" name="services" value="Car Washing"><span>Car Washing</span></label>
+                <label><input type="checkbox" name="services" value="Garden Weeding"><span>Garden Weeding</span></label>
+                <label><input type="checkbox" name="services" value="Trash Bin Cleaning"><span>Trash Bin Cleaning</span></label>
+                <label><input type="checkbox" name="services" value="Yard Work"><span>Yard Work</span></label>
+                <label class="gutter-option"><input type="checkbox" name="services" value="Gutter Cleaning"><span>Gutter Cleaning</span></label>
+              </div>
+              <p id="selected-services-label" class="selection-feedback" role="status" aria-live="polite">Select one or more services above.</p>
+            </fieldset>
+            <label class="sr-only" for="details">Job Details</label><textarea id="details" name="details" rows="2" maxlength="1400" required minlength="5" placeholder="Job Details (size, notes, etc.) *"></textarea>
+            <label class="date-control" for="preferredDate"><span>Preferred Date (optional)</span><input id="preferredDate" type="date" name="preferredDate" aria-label="Preferred date"></label>
+            <div class="honey" aria-hidden="true"><label for="website">Leave blank</label><input name="website" id="website" tabindex="-1" autocomplete="off"></div>
+            <button id="submit-request" class="submit-button" type="submit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg> Send Request</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services section-pad">
+      <div class="wrap">
+        <div class="section-heading"><span class="heading-line"></span><h2>Our Services <small class="service-count">7 SERVICES</small></h2><span class="heading-line"></span></div>
+        <div class="service-grid">
+          <button class="service-tile" type="button" data-service="Lawn Mowing"><span class="service-icon"><svg viewBox="0 0 76 63"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 44h44l-6-16H20zM50 28 64 9M14 36H8"/><circle cx="21" cy="51" r="6" fill="#83c916"/><circle cx="53" cy="51" r="6" fill="#83c916"/></g></svg></span><strong>Lawn Mowing</strong><small>Keep your lawn clean<br>and healthy.</small><span class="price-chip">Starting at $25</span></button>
+          <button class="service-tile" type="button" data-service="Leaf Cleanup"><span class="service-icon"><svg viewBox="0 0 76 63"><path d="M17 52C9 22 35 12 63 8c-1 29-10 47-35 46" fill="#1f7c17" stroke="#084f2f" stroke-width="3"/><path d="M16 56C34 38 40 34 61 16" fill="none" stroke="#083e1d" stroke-width="4"/></svg></span><strong>Leaf Cleanup</strong><small>Full leaf removal<br>and disposal.</small><span class="price-chip">Starting at $30</span></button>
+          <button class="service-tile" type="button" data-service="Car Washing"><span class="service-icon"><svg viewBox="0 0 76 63"><g fill="none" stroke="#063a1d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m13 40 7-17h37l8 17M8 40h61v13H8zM12 51v5M64 51v5"/><circle cx="19" cy="46" r="2"/><circle cx="58" cy="46" r="2"/></g><path d="m45 5 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#6db700"/><path d="m61 3 1.5 4L67 9l-4.5 2-1.5 4-2-4-4-2 4-2Z" fill="#94cf18"/></svg></span><strong>Car Washing</strong><small>Exterior hand wash<br>and detail.</small><span class="price-chip">Starting at $20</span></button>
+          <button class="service-tile" type="button" data-service="Garden Weeding"><span class="service-icon"><svg viewBox="0 0 76 63"><g fill="#12732b" stroke="#0b512c" stroke-width="3"><path d="M38 39C22 39 17 26 15 14c15 0 24 5 25 24M40 36c0-13 9-22 23-24 0 15-8 26-23 25"/></g><path d="M39 31v23" stroke="#064324" stroke-width="4" stroke-linecap="round"/><path d="M16 54c10-11 38-10 46 0" fill="#103c1c"/></svg></span><strong>Garden Weeding</strong><small>Remove weeds and<br>keep your beds tidy.</small><span class="price-chip">Starting at $20</span></button>
+          <button class="service-tile" type="button" data-service="Trash Bin Cleaning"><span class="service-icon"><svg viewBox="0 0 76 63" fill="none" stroke="#063d21" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21h36l-3 34H23zM16 21h44M29 16h18M34 8h10v8M33 29v18M43 29v18"/></svg></span><strong>Trash Bin Cleaning</strong><small>Deep clean and<br>deodorize your bins.</small><span class="price-chip">Starting at $15</span></button>
+          <button class="service-tile" type="button" data-service="Yard Work"><span class="service-icon"><svg viewBox="0 0 76 63" fill="none" stroke="#063d21" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m17 11 42 42M59 11 17 53M11 5l15 15-7 7L4 12zM51 5l20 7-12 12-8-8zM60 6l6 6"/></svg></span><strong>Yard Work</strong><small>General cleanup, trim,<br>and yard maintenance.</small><span class="price-chip">Starting at $25</span></button>
+          <button class="service-tile" type="button" data-service="Gutter Cleaning"><span class="service-icon"><svg viewBox="0 0 76 63" fill="none" stroke="#063d21" stroke-width="4" stroke-linejoin="round"><path d="M9 28 39 11l29 17M18 31h44M16 34h46v9H16zM26 43v10M54 43v10"/><path d="M21 44q0 8-4 11M61 44q-1 8-5 11" stroke="#6db700"/></svg></span><strong>Gutter Cleaning</strong><small>Elevated work requires<br>qualified adult help.</small><span class="price-chip">Quote after review</span></button>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="pricing section-pad"><div class="wrap narrow"><p class="section-kicker">SIMPLE, STRAIGHTFORWARD PRICING</p><h2>Great service. Fair starting prices.</h2><p>Prices shown are estimates for smaller jobs. Final quotes depend on the size, condition, and details of your request. We'll confirm your price and available date before any work is scheduled.</p><a href="#request" class="button button-primary">Get Your Quote <span aria-hidden="true">↗</span></a></div></section>
+    <section id="about" class="about section-pad"><div class="wrap about-grid"><div class="about-symbol"><img src="/assets/logo-original.png" alt="Original C&M Neighborhood Services house, lawn mower, and grass logo" loading="lazy"></div><div><p class="section-kicker">ABOUT C&amp;M</p><h2>Neighbors helping neighbors.</h2><p>We're Curtis and Mustafa, the local team behind C&amp;M Neighborhood Services. We help with everyday lawn care and household outdoor jobs, bringing friendly communication and attention to detail.</p><p>Send us a request with the job details, and we'll follow up to discuss timing and your exact price.</p><a href="#request" class="text-link">Request a service <span aria-hidden="true">→</span></a></div></div></section>
+    <section id="contact" class="contact section-pad"><div class="wrap contact-content"><p class="section-kicker">LET'S GET STARTED</p><h2>Ready for a cleaner yard?</h2><p>Use our request form to tell us what you need. No need to open your email app — just fill it out and press Send Request.</p><a href="#request" class="button button-primary">Send a Job Request <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><div><strong>C&amp;M Neighborhood Services</strong><p>Reliable • Affordable • Local</p></div><div><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="/admin">Team Login</a></div></div></footer>
+  <script defer src="/app.js?v=3"></script>
+</body>
+</html>

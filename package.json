@@ -1,0 +1,12 @@
+{
+  "name": "cm-neighborhood-services",
+  "version": "1.2.0",
+  "private": true,
+  "description": "C&M Neighborhood Services website and admin requests calendar",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
